@@ -17,5 +17,6 @@ Steps for successful execution:<br/>
 2.Insert the data into mongoDB as given in the blog<br/>
 3.Install Nodejs and NPM<br/>
 4. Navigate to the node-dc-mongo directory using command prompt and run npm install, this will install the dependencies<br/>
-5. Navigate to the node-dc-mongo directory using command prompt and run npm start<br/>
-6. In your browser go to localhost:8080/index.html<br/>
+5. In `node_modules\bson\ext\index.js` change path on 10th line: ```bson = require('../build/Release/bson');``` to ```bson = require('bson');``` <br/>
+6. Navigate to the node-dc-mongo directory using command prompt and run npm start<br/>
+7. In your browser go to localhost:8080/index.html<br/>
